@@ -396,10 +396,26 @@
 						}
 					]
 				},
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"blocked\": false,\n\t\"sort\": {\n\t\t\"startDate\": -1,\n\t\t\"endDate\": -1,\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"username\": -1\n\t},\n\t\"filter\": {\n\t\t\"startDate\": \"2019-04-27T08:42:25.397Z\",\n\t\t\"endDate\" : \"2019-09-28T08:42:25.397Z\",\n\t\t\"full_name\": \"P\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"email\": \"abc@gmail.com\",\n\t\t\"username\": \"abc\"\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3000/api/user?page=1&blocked=false&pageSize=10",
+					"raw": "http://localhost:3000/api/user",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -408,80 +424,6 @@
 					"path": [
 						"api",
 						"user"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
-						},
-						{
-							"key": "blocked",
-							"value": "false"
-						},
-						{
-							"key": "startDate",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "full_name",
-							"value": "asc",
-							"disabled": true
-						},
-						{
-							"key": "email",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "phoneNumber",
-							"value": "asc",
-							"disabled": true
-						},
-						{
-							"key": "endDate",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "username",
-							"value": "asc",
-							"disabled": true
-						},
-						{
-							"key": "username",
-							"value": "abc",
-							"disabled": true
-						},
-						{
-							"key": "endDate",
-							"value": "2019-09-28T08:42:25.397Z",
-							"disabled": true
-						},
-						{
-							"key": "email",
-							"value": "abc@gmail.com",
-							"disabled": true
-						},
-						{
-							"key": "phoneNumber",
-							"value": "0865675232",
-							"disabled": true
-						},
-						{
-							"key": "full_name",
-							"value": "teo",
-							"disabled": true
-						},
-						{
-							"key": "startDate",
-							"value": "2019-04-27T08:42:25.397Z",
-							"disabled": true
-						},
-						{
-							"key": "pageSize",
-							"value": "10"
-						}
 					]
 				}
 			},
@@ -628,10 +570,26 @@
 						}
 					]
 				},
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"blocked\": false,\n\t\"sort\": {\n\t\t\"startDate\": -1,\n\t\t\"endDate\": -1,\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"username\": -1\n\t},\n\t\"filter\": {\n\t\t\"startDate\": \"2019-01-27T08:42:25.397Z\",\n\t\t\"endDate\" : \"2020-12-28T08:42:25.397Z\",\n\t\t\"full_name\": \"Phạm Xuân Duy\",\n\t\t\"phoneNumber\": \"012\",\n\t\t\"email\": \"6@gmail.com\",\n\t\t\"username\": \"6\"\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3000/api/interShip?page=1&blocked=false&startDate=2019-11-23T13:51:53.849Z&endDate=2019-11-23T13:51:53.849Z",
+					"raw": "http://localhost:3000/api/interShip/get",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -639,17 +597,10 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"interShip"
+						"interShip",
+						"get"
 					],
 					"query": [
-						{
-							"key": "page",
-							"value": "1"
-						},
-						{
-							"key": "blocked",
-							"value": "false"
-						},
 						{
 							"key": "phoneNumber",
 							"value": "asc",
@@ -699,14 +650,6 @@
 							"key": "full_name",
 							"value": "Phạm Xuân Duy",
 							"disabled": true
-						},
-						{
-							"key": "startDate",
-							"value": "2019-11-23T13:51:53.849Z"
-						},
-						{
-							"key": "endDate",
-							"value": "2019-11-23T13:51:53.849Z"
 						}
 					]
 				}
@@ -737,7 +680,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"username\":\"intership1\",\n\t\"email\":\"intership1@gmail.com\",\n\t\"password\":\"12345678\",\n\t\"full_name\":\"Inter ship 1\",\n\t\"sex_type\": true,\n\t\"address\":\"Dũng sĩ - Thanh Khê - Đà nẵng\",\n\t\"university\": \"Duy Tan\",\n\t\"phoneNumber\":\"0865675232\",\n\t\"position_apply\": \"Reactjs\",\n    \"time_interShip\": 3,\n    \"startDate\": \"2019-11-23T08:03:18.612+00:00\",\n    \"endDate\": \"2019-11-23T08:03:18.612+00:00\"\n}",
+					"raw": "{\n\t\"username\":\"intership2\",\n\t\"email\":\"intership2@gmail.com\",\n\t\"password\":\"12345678\",\n\t\"full_name\":\"Inter ship 2\",\n\t\"sex_type\": true,\n\t\"address\":\"Dũng sĩ - Thanh Khê - Đà nẵng\",\n\t\"university\": \"Duy Tan\",\n\t\"phoneNumber\":\"0865675232\",\n\t\"position_apply\": \"Reactjs\",\n    \"time_interShip\": 3,\n    \"startDate\": \"2019-11-23T08:03:18.612+00:00\",\n    \"endDate\": \"2019-11-23T08:03:18.612+00:00\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -745,7 +688,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/interShip",
+					"raw": "http://localhost:3000/api/interShip/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -753,7 +696,8 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"interShip"
+						"interShip",
+						"create"
 					]
 				}
 			},
@@ -919,85 +863,7 @@
 			"response": []
 		},
 		{
-			"name": "absence-employee",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxMTg1MjUsImV4cCI6MTU3NTcyMzMyNX0.pUsPucF2sMG1fTMabaMZq4koWWMwgKrtmZa0kNRViGY",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/absence-employee?page=1&reason=duy&startDate=2019-08-27T08:42:25.397Z&endDate=2019-12-31T08:42:25.397Z",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"absence-employee"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
-						},
-						{
-							"key": "reason",
-							"value": "duy"
-						},
-						{
-							"key": "pageSize",
-							"value": "20",
-							"disabled": true
-						},
-						{
-							"key": "month",
-							"value": "9",
-							"disabled": true
-						},
-						{
-							"key": "year",
-							"value": "2019",
-							"disabled": true
-						},
-						{
-							"key": "startDate",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "reason",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "endDate",
-							"value": "asc",
-							"disabled": true
-						},
-						{
-							"key": "startDate",
-							"value": "2019-08-27T08:42:25.397Z"
-						},
-						{
-							"key": "endDate",
-							"value": "2019-12-31T08:42:25.397Z"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "absence-employee",
+			"name": "absence-employee/get",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -1020,7 +886,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"employee\" :\"5dd9395b0caf3063c0504109\",\n\t\"startDate\": \"2019-12-01T08:03:18.612+00:00\",\n\t\"endDate\": \"2019-12-02T08:03:18.612+00:00\",\n\t\"number_of_days_absence\": 1,\n\t\"reason\": \"issue ca nhan\"\n}",
+					"raw": "{\n\t\"month\": 12,\n\t\"year\": 2019,\n\t\"sort\": {\n\t\t\"startDate\": -1,\n\t\t\"endDate\": -1\n\t},\n\t\"filter\": {\n\t\t\"startDate\": \"2019-04-27T08:42:25.397Z\",\n\t\t\"endDate\" : \"2019-12-28T08:42:25.397Z\",\n\t\t\"reason\": \"issue\"\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1028,7 +894,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/absence-employee",
+					"raw": "http://localhost:3000/api/absence-employee/get",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1036,7 +902,55 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"absence-employee"
+						"absence-employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "absence-employee/post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxMTg1MjUsImV4cCI6MTU3NTcyMzMyNX0.pUsPucF2sMG1fTMabaMZq4koWWMwgKrtmZa0kNRViGY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startDate\": \"2019-12-01T08:03:18.612+00:00\",\n\t\"endDate\": \"2019-12-02T08:03:18.612+00:00\",\n\t\"total_absence\": 1,\n\t\"reason\": \"issue ca nhan\",\n\t\"employeeId\": \"5dd9397f0caf3063c0504110\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/absence-employee/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"absence-employee",
+						"create"
 					]
 				}
 			},
@@ -1225,7 +1139,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/cv-apply",
+					"raw": "http://localhost:3000/api/cv-apply/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1233,14 +1147,15 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"cv-apply"
+						"cv-apply",
+						"create"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "cv-apply",
+			"name": "cv-apply/get",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -1252,10 +1167,26 @@
 						}
 					]
 				},
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"position_apply\": -1\n\t},\n\t\"filter\": {\n\t\t\"position_apply\": \"FullStack Developer\",\n\t\t\"cv_pass_fail\" : true,\n\t\t\"full_name\": \"Phan Văn Đức\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"email\": \"vanduc@gmail.com\",\n\t\t\"username\": \"abc\",\n\t\t\"type_apply\": 1\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3000/api/cv-apply?type_apply=1&cv_pass_fail=true",
+					"raw": "http://localhost:3000/api/cv-apply/get",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1263,57 +1194,8 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"cv-apply"
-					],
-					"query": [
-						{
-							"key": "full_name",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "email",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "phoneNumber",
-							"value": "asc",
-							"disabled": true
-						},
-						{
-							"key": "position_apply",
-							"value": "desc",
-							"disabled": true
-						},
-						{
-							"key": "full_name",
-							"value": "Phan Văn Đức",
-							"disabled": true
-						},
-						{
-							"key": "email",
-							"value": "vanduc@gmail.com",
-							"disabled": true
-						},
-						{
-							"key": "phoneNumber",
-							"value": "0856123478",
-							"disabled": true
-						},
-						{
-							"key": "position_apply",
-							"value": "FullStack Developer",
-							"disabled": true
-						},
-						{
-							"key": "type_apply",
-							"value": "1"
-						},
-						{
-							"key": "cv_pass_fail",
-							"value": "true"
-						}
+						"cv-apply",
+						"get"
 					]
 				}
 			},
