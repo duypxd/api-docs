@@ -917,7 +917,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxMTg1MjUsImV4cCI6MTU3NTcyMzMyNX0.pUsPucF2sMG1fTMabaMZq4koWWMwgKrtmZa0kNRViGY",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZXRAZ21haWwuY29tIiwidXNlcklkIjoiNWRkZTU1MjcwNDRhNzEwMDI0Y2JhMDJmIiwiaWF0IjoxNTc1OTY0MTk4LCJleHAiOjE1NzY1Njg5OTh9.pGccbAqJbO6z4RPjdFGd_fL8iveYKLGHJmh6Iilgh_k",
 							"type": "string"
 						}
 					]
@@ -933,7 +933,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"startDate\": \"2019-12-01T08:03:18.612+00:00\",\n\t\"endDate\": \"2019-12-02T08:03:18.612+00:00\",\n\t\"total_absence\": 1,\n\t\"reason\": \"issue ca nhan\",\n\t\"employeeId\": \"5dd9397f0caf3063c0504110\"\n}",
+					"raw": "{\n\t\"startDate\": \"2019-12-01T08:03:18.612+00:00\",\n\t\"endDate\": \"2019-12-02T08:03:18.612+00:00\",\n\t\"total_absence\": 1,\n\t\"reason\": \"issue ca nhan\",\n\t\"user\": \"5dd9397f0caf3063c0504110\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
