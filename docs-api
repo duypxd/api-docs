@@ -1115,7 +1115,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxMTg1MjUsImV4cCI6MTU3NTcyMzMyNX0.pUsPucF2sMG1fTMabaMZq4koWWMwgKrtmZa0kNRViGY",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZXRAZ21haWwuY29tIiwidXNlcklkIjoiNWRkZTU1MjcwNDRhNzEwMDI0Y2JhMDJmIiwiaWF0IjoxNTc2NTQ4NTMyLCJleHAiOjE1NzcxNTMzMzJ9.JgVLr015buIb3q94FXTfFLeGspHsYWy8qAs2Y5eQKqo",
 							"type": "string"
 						}
 					]
@@ -1162,7 +1162,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxMTg1MjUsImV4cCI6MTU3NTcyMzMyNX0.pUsPucF2sMG1fTMabaMZq4koWWMwgKrtmZa0kNRViGY",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZXRAZ21haWwuY29tIiwidXNlcklkIjoiNWRkZTU1MjcwNDRhNzEwMDI0Y2JhMDJmIiwiaWF0IjoxNTc2NTQ4NTMyLCJleHAiOjE1NzcxNTMzMzJ9.JgVLr015buIb3q94FXTfFLeGspHsYWy8qAs2Y5eQKqo",
 							"type": "string"
 						}
 					]
@@ -1178,7 +1178,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"position_apply\": -1\n\t},\n\t\"filter\": {\n\t\t\"position_apply\": \"FullStack Developer\",\n\t\t\"cv_pass_fail\" : true,\n\t\t\"full_name\": \"Phan Văn Đức\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"email\": \"vanduc@gmail.com\",\n\t\t\"username\": \"abc\",\n\t\t\"type_apply\": 1\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"position_apply\": -1\n\t},\n\t\"filter\": {\n\t\t\"position_apply\": \"FullStack Developer\",\n\t\t\"cv_pass_fail\" : true,\n\t\t\"full_name\": \"Phan Văn Đức\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"email\": \"vanduc@gmail.com\",\n\t\t\"username\": \"abc\",\n\t\t\"type_apply\": 1,\n\t\t\"interview_pass_fail\": true\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
