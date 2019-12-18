@@ -1836,6 +1836,212 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "bill/update/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contract_code\": \"HT-ABCDE\",\n\t\"content_requires_payment\": \"Công Ty HT Active \",\n\t\"code_bill\": \"1234567\",\n\t\"biller\": \"Thuận H Đứcồ\",\n\t\"date_export\": \"2019-09-28T00:00:00.000Z\",\n\t\"amount\": 1234567890,\n\t\"status_bill\": true,\n\t\"contract_status\": false,\n\t\"notes\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bill/update/5dfa00ad41eac089807985fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bill",
+						"update",
+						"5dfa00ad41eac089807985fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/bill/detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/bill/detail/5dfa00ad41eac089807985fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bill",
+						"detail",
+						"5dfa00ad41eac089807985fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bill/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contract_code\": \"HT-ASIANTECH\",\n\t\"content_requires_payment\": \"Công Ty HT Active \",\n\t\"code_bill\": \"1234567\",\n\t\"biller\": \"Thuận Hồ\",\n\t\"date_export\": \"2019-12-28T00:00:00.000Z\",\n\t\"amount\": 5415000000,\n\t\"status_bill\": true,\n\t\"contract_status\": false,\n\t\"notes\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bill/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bill",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bill/get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\": {\n\t\t\"date_export\": -1\n\t},\n\t\"filter\": {\n\t\t\"date_export\": \"2019-12-28T00:00:00.000Z\",\n\t\t\"contract_code\": \"HT-dsa\",\n\t\t\"content_requires_payment\": \"\",\n\t\t\"biller\": \"\",\n\t\t\"code_bill\": \"\",\n\t\t\"status_bill\": \"\",\n\t\t\"contract_status\": \"\"\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bill/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bill",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/bill/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/bill/delete/5dfa00ad41eac089807985fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bill",
+						"delete",
+						"5dfa00ad41eac089807985fe"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
