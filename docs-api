@@ -1630,6 +1630,212 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "labor-contracts/get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1,\n\t\t// Tùy trường nào muốn sort thì handle ở đây\n\t},\n\t\"filter\": {\n\t\t\"full_name\": \"Phạm Xuân Duy\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"startDate\": \"\",\n\t\t\"city_birth\": \"\",\n\t\t\"permanent_address\": \"\",\n\t\t\"temporary_address\": \"\",\n\t\t\"position\": \"\",\n\t\t\"contract_number\": \"\",\n\t\t\"status\": \"\"\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/labor-contracts/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"labor-contracts",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "labor-contracts/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"full_name\":\"Nguyễn Công Phượng\",\n\t\"birthday\": \"1996-09-28T00:00:00.000Z\",\n\t\"city_birth\": \"Huê\",\n\t\"phoneNumber\": \"0865675232\",\n\t\"permanent_address\": \"Phường A, Quận B, Huế\",\n\t\"temporary_address\": \"Phường C, Quận D, Đà Nẵng\",\n\t\"identity_card\": 191989888,\n\t\"date_of_issue\": \"2019-09-28T00:00:00.000Z\",\n\t\"startDate\": \"2019-07-28T00:00:00.000Z\",\n\t\"endDate\": \"2020-12-28T00:00:00.000Z\",\n\t\"position\": \"Developer\",\n\t\"status\": true,\n\t\"notes\": \"\",\n\t\"contract_number\": \"Số 2/HĐLĐ-LML/2018\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/labor-contracts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"labor-contracts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "labor-contracts/detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/labor-contracts/detail/5df9f4758005978588c9dbd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"labor-contracts",
+						"detail",
+						"5df9f4758005978588c9dbd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "labor-contracts/update/5df9f4758005978588c9dbd5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"full_name\":\"Nguyễn Công Phượng\",\n\t\"birthday\": \"1996-09-28T00:00:00.000Z\",\n\t\"city_birth\": \"Nghệ An\",\n\t\"phoneNumber\": \"0123456789\",\n\t\"permanent_address\": \"Phường A, Quận B, Huế\",\n\t\"temporary_address\": \"Phường C, Quận D, Đà Nẵng\",\n\t\"identity_card\": 191989888,\n\t\"date_of_issue\": \"2019-09-28T00:00:00.000Z\",\n\t\"startDate\": \"2019-07-28T00:00:00.000Z\",\n\t\"endDate\": \"2020-12-28T00:00:00.000Z\",\n\t\"position\": \"Developer\",\n\t\"status\": true,\n\t\"notes\": \"\",\n\t\"contract_number\": \"Số 2/HĐLĐ-LML/2018\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/labor-contracts/update/5df9f4758005978588c9dbd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"labor-contracts",
+						"update",
+						"5df9f4758005978588c9dbd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "labor-contracts/delete/5df9f7e7c25351ae54be9a1d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/labor-contracts/delete/5df9f7e7c25351ae54be9a1d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"labor-contracts",
+						"delete",
+						"5df9f7e7c25351ae54be9a1d"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
