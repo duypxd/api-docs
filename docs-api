@@ -1178,7 +1178,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1,\n\t\t\"phoneNumber\": -1,\n\t\t\"email\": -1,\n\t\t\"position_apply\": -1\n\t},\n\t\"filter\": {\n\t\t\"position_apply\": \"FullStack Developer\",\n\t\t\"cv_pass_fail\" : true,\n\t\t\"full_name\": \"Phan Văn Đức\",\n\t\t\"phoneNumber\": \"0865675232\",\n\t\t\"email\": \"vanduc@gmail.com\",\n\t\t\"username\": \"abc\",\n\t\t\"type_apply\": 1,\n\t\t\"interview_pass_fail\": true\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"raw": "{\n\t\"sort\": {\n\t\t\"full_name\": -1\n\t},\n\t\"filter\": {\n\t\t\"position_apply\": \"FullStack Developer\",\n\t\t\"cv_pass_fail\" : true,\n\t\t\"full_name\": \"Đặng Văn Lâm\",\n\t\t\"phoneNumber\": \"0955214785\",\n\t\t\"email\": \"vanlam@gmail.com\",\n\t\t\"type_apply\": 1,\n\t\t\"interview_pass_fail\": false\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1392,7 +1392,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUxNzA2NzMsImV4cCI6MTU3NTc3NTQ3M30.PlLG3fTl8-VYFOHUexpofzATJtqill14Tw-M92jecKQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
 							"type": "string"
 						}
 					]
@@ -1598,7 +1598,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGQ4ZTdjNjAwZTM1YzNkODA4Mjc0NjYiLCJpYXQiOjE1NzUyNTM0NjcsImV4cCI6MTU3NTg1ODI2N30.R_R1tM_XVC3yGmUyhSXFwxcptmQWFzfXPPcB7BATpI0",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
 							"type": "string"
 						}
 					]
@@ -1886,7 +1886,7 @@
 			"response": []
 		},
 		{
-			"name": "/bill/detail",
+			"name": "bill/detail",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -2012,7 +2012,7 @@
 			"response": []
 		},
 		{
-			"name": "api/bill/delete",
+			"name": "bill/delete",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -2038,6 +2038,212 @@
 						"bill",
 						"delete",
 						"5dfa00ad41eac089807985fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "economic-contracts/get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\": {\n\t\t\"contract_Code\": -1\n\t},\n\t\"filter\": {\n\t\t\"sign_day\": \"2019-02-12T00:00:00.000Z\",\n\t\t\"acceptance_day\": \"2019-03-13T00:00:00.000Z\",\n\t\t\"liquidation_day\": \"2019-05-13T00:00:00.000Z\",\n\t\t\"contract_Code\": \"Hợp đồng ABC\",\n\t\t\"name_contract\": \"Hợp đồng ABC\",\n\t\t\"partner\": \"VOOC\",\n\t\t\"appendix_number\": 4\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/economic-contracts/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"economic-contracts",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "economic-contracts/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/841\",\n\t\"name_contract\": \"Hợp đồn RIKKIE\",\n\t\"partner\": \"RIKKIE\",\n\t\"sign_day\": \"2019-05-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-09-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-13T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"HANH, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 3,\n\t\"notes\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/economic-contracts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"economic-contracts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "economic-contracts/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/123\",\n\t\"name_contract\": \"Hợp đồng ABCIE\",\n\t\"partner\": \"DUY\",\n\t\"sign_day\": \"2019-04-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-08-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-31T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"KJ, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 12,\n\t\"notes\": \"ok done\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/economic-contracts/update/5dfa33abf23cb39f346e9699",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"economic-contracts",
+						"update",
+						"5dfa33abf23cb39f346e9699"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "economic-contracts/detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/economic-contracts/detail/5dfa33abf23cb39f346e9699",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"economic-contracts",
+						"detail",
+						"5dfa33abf23cb39f346e9699"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "economic-contracts/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/economic-contracts/delete/5dfa38af692d867ea421ddb0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"economic-contracts",
+						"delete",
+						"5dfa38af692d867ea421ddb0"
 					]
 				}
 			},
