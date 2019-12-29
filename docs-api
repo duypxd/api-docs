@@ -1901,7 +1901,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGYxYmY4M2Y0ZGVkMDAwMjRhMTM4YjkiLCJpYXQiOjE1NzY2NjEzMDgsImV4cCI6MTU3NzI2NjEwOH0.48EMW6QN4kmcn4K8Q5QyZWkqBviXBadq-XLPEbEUfq4",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh1YW5kdXlybkBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZGZlY2JjNzIyOTQwNDAwMjQ0ZTMwOWQiLCJpYXQiOjE1Nzc1MDA0NzAsImV4cCI6MTU3ODEwNTI3MH0.aPKSoPPmcVO822ZXnWYNjVEbhkXVDzFfOSwQ1CIixrE",
 							"type": "string"
 						}
 					]
@@ -1917,7 +1917,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"sort\": {\n\t\t\"contract_Code\": -1\n\t},\n\t\"filter\": {\n\t\t\"sign_day\": \"2019-02-12T00:00:00.000Z\",\n\t\t\"acceptance_day\": \"2019-03-13T00:00:00.000Z\",\n\t\t\"liquidation_day\": \"2019-05-13T00:00:00.000Z\",\n\t\t\"contract_Code\": \"Hợp đồng ABC\",\n\t\t\"name_contract\": \"Hợp đồng ABC\",\n\t\t\"partner\": \"VOOC\",\n\t\t\"appendix_number\": 4\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}"
+					"raw": "{\n\t\"sort\": {\n\t\t\"contract_Code\": -1\n\t},\n\t\"filter\": {\n\t\t\"isPay\": true,\n\t\t\"sign_day\": \"2019-02-12T00:00:00.000Z\",\n\t\t\"acceptance_day\": \"2019-03-13T00:00:00.000Z\",\n\t\t\"liquidation_day\": \"2019-05-13T00:00:00.000Z\",\n\t\t\"contract_Code\": \"Hợp đồng ABC\",\n\t\t\"name_contract\": \"Hợp đồng ABC\",\n\t\t\"partner\": \"VOOC\",\n\t\t\"appendix_number\": 4\n\t},\n\t\"pagination\": {\n\t\t\"pageSize\": 10,\n\t\t\"page\": 1\n\t}\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/api/economic-contracts/get",
@@ -1959,7 +1959,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/841\",\n\t\"name_contract\": \"Hợp đồn RIKKIE\",\n\t\"partner\": \"RIKKIE\",\n\t\"sign_day\": \"2019-05-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-09-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-13T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"HANH, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 3,\n\t\"notes\": \"\"\n}"
+					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/841\",\n\t\"name_contract\": \"Hợp đồn RIKKIE\",\n\t\"partner\": \"RIKKIE\",\n\t\"sign_day\": \"2019-05-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-09-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-13T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"HANH, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 3,\n\t\"notes\": \"\",\n\t\"isPay\": false\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/api/economic-contracts/create",
@@ -2001,7 +2001,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/123\",\n\t\"name_contract\": \"Hợp đồng ABCIE\",\n\t\"partner\": \"DUY\",\n\t\"sign_day\": \"2019-04-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-08-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-31T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"KJ, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 12,\n\t\"notes\": \"ok done\"\n}"
+					"raw": "{\n\t\"contract_Code\": \"HT-NTX-2019/123\",\n\t\"name_contract\": \"Hợp đồng ABCIE\",\n\t\"partner\": \"DUY\",\n\t\"sign_day\": \"2019-04-12T00:00:00.000Z\",\n\t\"acceptance_day\": \"2019-08-13T00:00:00.000Z\",\n\t\"liquidation_day\": \"2019-12-31T00:00:00.000Z\",\n\t\"contract_value\": 3900000,\n\t\"info_live_partner\": \"KJ, SĐT: 987456321, HR Ht Active\",\n\t\"appendix_number\": 12,\n\t\"notes\": \"ok done\",\n\t\"isPay\": false\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/api/economic-contracts/update/5dfa33abf23cb39f346e9699",
